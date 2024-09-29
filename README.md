@@ -5,4 +5,4 @@ micro-code generation of STM32G0-discovery board. The objective of this project
 is to facilitate the configuration of the peripherals with assembly code using the
 STM32G0-discovery board by developing a graphical interface that generates an
 assembly code automatically
-Covred peripherals : Input,Output,Timer,ADC,USART
+# Covred peripherals : Input,Output,Timer,ADC,USART
