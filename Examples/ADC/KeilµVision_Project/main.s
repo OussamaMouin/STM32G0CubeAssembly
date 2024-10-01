@@ -1,1 +1,106 @@
+;----Includes BEGIN
 
+ INCLUDE stm32G0_constants.s
+ INCLUDE core_cm0_plus_constants.s
+
+;----Includes END
+ AREA main,Code,READONLY
+ EXPORT __main
+ ENTRY
+__main PROC
+;USER CODE BEGIN 1
+
+
+ BL RCC_CONFIG
+ BL ADC_IN11_Config
+ BL GPIOA12_Config
+
+;USER CODE END 1
+;While loop begin
+loop
+;USER CODE BEGIN 2
+  		 LDR r0,=ADC1_BASE 
+		 LDR r5,[r0,#ADC_DR]
+		 LDR r1, =0x7FF
+		 CMP r5, r1
+		 BGT turn_on_led
+		 B turn_off_led		
+turn_on_led 
+	LDR r0,=GPIOA_BASE 
+	LDR r1, [r0, #GPIO_ODR]
+	LDR r2, =(GPIO_ODR_OD12) ;1<<12
+	ORRS r1, r1, r2 
+	STR r1, [r0, #GPIO_ODR]
+	B loop
+turn_off_led 
+	LDR r0,=GPIOA_BASE 
+	LDR r1, [r0, #GPIO_ODR]
+	LDR r2, =(GPIO_ODR_OD12) ;1<<12
+	BICS r1, r1, r2; 
+	STR r1, [r0, #GPIO_ODR]
+;USER CODE END 2
+ B loop
+ ENDP
+RCC_CONFIG PROC
+ PUSH{LR}
+ LDR r0,=RCC_BASE
+ LDR r1,[r0, #RCC_IOPENR]
+ LDR r2,=RCC_IOPENR_GPIOAEN
+ ORRS r1,r1,r2
+ STR r1, [r0,#RCC_IOPENR]
+ LDR r0,=RCC_BASE
+ LDR r1,[r0, #RCC_APBENR2]
+ LDR r2,=RCC_APBENR2_ADCEN
+ ORRS r1,r1,r2
+ STR r1, [r0,#RCC_APBENR2]
+ LDR r0, =RCC_BASE
+ LDR r1, [r0, #RCC_IOPENR]
+ LDR r2, =RCC_IOPENR_GPIOBEN
+ ORRS r1, r1, r2
+ STR r1, [r0, #RCC_IOPENR]
+ POP{PC}
+ ENDP
+
+ADC_IN11_Config PROC
+ PUSH{LR}
+ LDR r0, =GPIOB_BASE
+ LDR r1, [r0, #GPIO_MODER]
+ LDR r2, =GPIO_MODER_MODE7 ;3<<2*7
+ BICS r1,r1,r2
+ LDR r2, =GPIO_MODER_MODE7_0  ;3<<2*7
+ ORRS r1,r1,r2
+ LDR r2, =GPIO_MODER_MODE7_1  ;3<<2*7
+ ORRS r1,r1,r2
+ STR r1, [r0, #GPIO_MODER]
+ LDR r0,=ADC1_BASE
+ LDR r1,[r0, #ADC_CFGR1]
+ LDR r2,=ADC_CFGR1_CONT
+ ORRS r1,r1,r2
+ STR r1,[r0, #ADC_CFGR1]
+ LDR r1,[r0, #ADC_CHSELR]
+ LDR r2,=ADC_CHSELR_CHSEL11
+ ORRS r1,r1,r2
+ STR r1,[r0, #ADC_CHSELR]
+ LDR r1,[r0, #ADC_CR]
+ LDR r2,=ADC_CR_ADEN
+ ORRS r1,r1,r2
+ STR r1,[r0, #ADC_CR]
+ LDR r1,[r0, #ADC_CR]
+ LDR r2,=ADC_CR_ADSTART
+ ORRS r1,r1,r2
+ STR r1,[r0, #ADC_CR]
+ POP{PC}
+ ENDP
+GPIOA12_Config PROC
+ PUSH{LR}
+ LDR r0, =GPIOA_BASE
+ LDR r1, [r0, #GPIO_MODER]
+ LDR r2, =GPIO_MODER_MODE12 ;3<<2*12
+ BICS r1, r1, r2
+ LDR r2, =GPIO_MODER_MODE12_0   ;1<<2*12
+ ORRS r1, r1, r2
+ STR r1, [r0, #GPIO_MODER]
+ POP{PC}
+ ENDP
+ ALIGN 4
+ END
