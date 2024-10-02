@@ -1,0 +1,129 @@
+;----Includes BEGIN
+
+ INCLUDE stm32G0_constants.s
+ INCLUDE core_cm0_plus_constants.s
+
+;----Includes END
+ AREA main,Code,READONLY
+ EXPORT __main
+ ENTRY
+__main PROC
+;USER CODE BEGIN 1
+
+
+ BL RCC_CONFIG
+ BL USART2_TX_Config
+ BL USART2_TX_AF
+  
+
+;USER CODE END 1
+;While loop begin
+loop
+;USER CODE BEGIN 2
+
+; BL UART_ReadChar
+ MOVS r4,#0x59 ;Y
+ BL UART_WriteChar
+ BL Delay	
+ MOVS r4,#0x4E ;N
+ BL UART_WriteChar
+ BL Delay	
+
+
+
+
+;USER CODE END 2
+ B loop
+ ENDP
+Delay PROC
+    PUSH {LR}
+    LDR R1,=1000000 ; Number of cycles per millisecond
+Lop
+    SUBS R1, R1, #1
+    BNE Lop
+    POP {PC}
+	
+	ENDP
+UART_WriteChar PROC
+		PUSH{LR}		
+		LDR r0,=USART2_BASE
+		UXTB r1,r4
+		STR r1, [r0, #USART_TDR]
+oloop	LDR r1,[r0,#USART_ISR]
+		LDR r2, =USART_ISR_TXE_TXFNF
+		ANDS r1,r2
+		CMP r1,#0x00
+		BEQ oloop
+	
+		POP{PC}
+		ENDP
+			
+
+RCC_CONFIG PROC
+ PUSH{LR}
+ LDR r0, =RCC_BASE
+ LDR r1, [r0, #RCC_IOPENR]
+ LDR r2, =RCC_IOPENR_GPIOBEN
+ ORRS r1, r1, r2
+ STR r1, [r0, #RCC_IOPENR]
+ LDR r1,[r0, #RCC_APBENR2]
+ LDR r2,=RCC_APBENR2_USART1EN
+ ORRS r1,r1,r2
+ STR r1, [r0,#RCC_APBENR2]
+ LDR r1,[r0, #RCC_APBENR1]
+ LDR r2,=RCC_APBENR1_USART2EN
+ ORRS r1,r1,r2
+ STR r1, [r0,#RCC_APBENR1]
+ LDR r1,[r0, #RCC_IOPENR]
+ LDR r2,=RCC_IOPENR_GPIOAEN
+ ORRS r1,r1,r2
+ STR r1, [r0,#RCC_IOPENR]
+ POP{PC}
+ ENDP
+
+
+USART2_TX_Config PROC
+ PUSH{LR}
+USART2_Baudrate_DIV          EQU 0x682
+ LDR r0,=USART2_BASE
+;Disabling USART
+ LDR r1,[r0]
+ LDR r2,=USART_CR1_UE
+ BICS r1,r1,r2
+ STR r1,[r0]
+;Selecting Baud Rate
+ LDR r1,[r0,#USART_BRR]
+ LDR r2,=USART_BRR_BRR
+ ORRS r1,r1,r2
+ LDR r2,=USART2_Baudrate_DIV
+ ANDS r1,r1,r2
+ STR r1,[r0,#USART_BRR]
+;Transmition_Enable
+ LDR r1,[r0]
+ LDR r2,=USART_CR1_TE
+ ORRS r1,r1,r2
+ STR r1,[r0]
+;Enabling USART
+ LDR r1,[r0]
+ LDR r2,=USART_CR1_UE
+ ORRS r1,r1,r2
+ STR r1,[r0]
+ POP{PC}
+ ENDP
+USART2_TX_AF PROC
+ PUSH{LR}
+ LDR r0,=GPIOA_BASE
+ LDR r1,[r0, #GPIO_MODER]
+ LDR r2,=GPIO_MODER_MODE2 ;3<<2*7
+ BICS r1,r1,r2
+ LDR r2,=GPIO_MODER_MODE2_1
+ ORRS r1,r1,r2
+ STR r1,[r0,#GPIO_MODER]
+ LDR r1,[r0,#GPIO_AFRL]
+ LDR r2,=GPIO_AFRL_AFSEL2_0
+ ORRS r1,r1,r2
+ STR r1,[r0,#GPIO_AFRL]
+ POP{PC}
+ ENDP
+ ALIGN 4
+ END
