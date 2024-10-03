@@ -18,7 +18,7 @@ This application controls the state of an LED (on/off) depending on the message 
 ## Video Demonstration
 
 <a href="https://player.vimeo.com/video/1015182859">
-    <img src="../../Images/RX2.jpg" alt="Video Demonstration" width="300">
+    <img src="../../../Images/RX2.jpg" alt="Video Demonstration" width="300">
 </a>
 
 Click the image above to watch the video demonstration of this example.
