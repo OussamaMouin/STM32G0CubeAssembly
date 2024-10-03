@@ -10,10 +10,9 @@ This application sends two characters, `'Y'` and `'N'`, over the USART2 interfac
 This cycle repeats indefinitely, and the characters are transmitted to the connected Bluetooth/USART module.
 
 ### Wiring:
-- **Pin 1 (PB7 : USART1_RX)**: Connected to the TX pin of the Bluetooth/USART module.
+- **Pin 4 (PA2 : USART2_TX)**: Connected to the TX pin of the Bluetooth/USART module.
 - **Power**: The Bluetooth module is powered by a 5V supply (from another board, as the STM32G0 only provides 3.3V output).
   - The grounds of both boards must be connected together.
-- **Pin 6 (PA15)**: Connected to an optional external LED.
 
 ---
 
