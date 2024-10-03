@@ -1,6 +1,6 @@
 # ADC Application
 
-![ADC Application](Images/ADC_Example.jpg) <!-- Replace with the actual path to your image -->
+![ADC Application](../../Images/ADC_Example.jpg) 
 
 ## Description of the ADC Application
 The goal of this application is to control the state of an LED (PA15) by reading the ADC value from a potentiometer. A threshold value is set (0x7FF, approximately 2V), beyond which the LED's state changes.
