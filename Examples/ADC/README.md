@@ -19,7 +19,10 @@ The ADC (Analog-to-Digital Converter) reads the voltage from the potentiometer a
 ---
 
 ## Video Demonstration
-[![Video Demonstration](../../Images/ADC.jpg)](https://player.vimeo.com/video/1015183830)
+<a href="https://player.vimeo.com/video/1015183830">
+    <img src="../../Images/ADC.jpg" alt="Video Demonstration" width="300">
+</a>
+
 
 Click the image above to watch the video demonstration of this example.
 
