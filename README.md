@@ -5,7 +5,7 @@ STM32G0-discovery board by developing a graphical interface that generates the c
 assembly automatically
 ## Table of Contents 
 - [Examples: Basic applications configured using the interface's generated code ](#Examples)
-- [SourceCode: Interface's source code written in c++ implemented with QT](#project-2-mixed-signal-system-with-adc-and-pwm)
+- [SourceCode: Interface's source code written in c++ implemented with QT](#Source-Code)
 
 ## Examples
 In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the following:
@@ -16,6 +16,7 @@ In this project we tested our developed interface generated configuration code t
   <li>USART</li>
 </ul>
 In this part we put a template for keil µVision and the some examples with the source code.
+
 ## Source Code
 
 
