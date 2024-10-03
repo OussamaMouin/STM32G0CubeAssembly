@@ -1,6 +1,6 @@
 # TIMER Example
 
-![TIMER Example](../../Images/TIMER.jpg) <!-- Replace with the correct image path if necessary -->
+<img src="../../Images/TIMER.jpg" alt="TIMER Example" width="300">
 
 ## Application: TIMER
 
