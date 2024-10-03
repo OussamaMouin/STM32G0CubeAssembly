@@ -8,7 +8,7 @@ assembly automatically
 - [SourceCode: Interface's source code written in c++ implemented with QT](#project-2-mixed-signal-system-with-adc-and-pwm)
 
 ## Examples
-In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the folowing:
+In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the following:
 <ul>
   <li>GPIO</li>
   <li>ADC</li>
