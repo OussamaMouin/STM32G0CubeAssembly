@@ -19,18 +19,18 @@ This application combines both the RX and TX functionalities into two separate b
 ## Video Demonstrations
 
 
-### 1. Without Bluetooth Module
+### 1. With Bluetooth Module
 
-<a href="https://player.vimeo.com/video/1015182233">
-    <img src="../../../Images/RXTX2.jpg" alt="Video Demonstration Without Bluetooth Module" width="300">
+<a href="https://player.vimeo.com/video/1015181854">
+    <img src="../../../Images/RXTX3.jpg" alt="Video Demonstration With Bluetooth Module" width="300">
 </a>
 
 ---
 
-### 2. With Bluetooth Module
+### 2. Without Bluetooth Module
 
-<a href="https://player.vimeo.com/video/1015181854">
-    <img src="../../../Images/RXTX3.jpg" alt="Video Demonstration With Bluetooth Module" width="300">
+<a href="https://player.vimeo.com/video/1015182233">
+    <img src="../../../Images/RXTX2.jpg" alt="Video Demonstration Without Bluetooth Module" width="300">
 </a>
 
 Click the images above to watch the video demonstrations.
