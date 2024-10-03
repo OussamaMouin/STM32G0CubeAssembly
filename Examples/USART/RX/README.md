@@ -1,6 +1,6 @@
 # USART RX Example
 
-![USART RX Example](../../Images/RX1.jpg) <!-- Replace with the correct image path if necessary -->
+![USART RX Example](../../../Images/RX1.jpg) <!-- Replace with the correct image path if necessary -->
 
 ## Description
 This application controls the state of an LED (on/off) depending on the message received via UART:
@@ -17,12 +17,7 @@ This application controls the state of an LED (on/off) depending on the message 
 
 ## Video Demonstration
 
-![Video Demonstration](../../Images/RX2.jpg)
-
-<div style="padding:177.78% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/1015182859?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="USART_RX_Example"></iframe>
-</div>
-<script src="https://player.vimeo.com/api/player.js"></script>
+[![Video Demonstration](../../../Images/RX2.jpg)](https://player.vimeo.com/video/1015182859)
 
 Click the image above to watch the video demonstration of this example.
 
