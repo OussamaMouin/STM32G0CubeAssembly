@@ -7,6 +7,12 @@ assembly automatically
 - [Examples: Basic applications configured using the interface's generated code ](#Examples)
 - [SourceCode: Interface's source code written in c++ implemented with QT](#project-2-mixed-signal-system-with-adc-and-pwm)
 
-##Examples
-
+## Examples
+In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the folowing:
+<ul>
+  <li>GPIO</li>
+  <li>ADC</li>
+  <li>TIMER</li>
+  <li>USART</li>
+</ul>
 
