@@ -7,6 +7,6 @@ assembly automatically
 - [Examples: Basic applications configured using the interface's generated code ](#Examples)
 - [SourceCode: Interface's source code written in c++ implemented with QT](#project-2-mixed-signal-system-with-adc-and-pwm)
 
-#Examples
+##Examples
 
 
