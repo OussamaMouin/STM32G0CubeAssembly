@@ -24,8 +24,8 @@ The goal is to read the **ADC input** from a potentiometer, which provides varyi
 
 ## Video Demonstration
 
-<a href="your_video_link_here">
-    <img src="../../Images/PWM2.jpg" alt="PWM Video Demonstration" width="300">
+<a href="https://player.vimeo.com/video/1015896719">
+    <img src="../../Images/PWM2.jpg" alt="PWM Video Demonstration" width="400">
 </a>
 
 Click the image above to watch the video demonstration of this example.
