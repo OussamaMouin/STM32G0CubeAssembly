@@ -21,7 +21,7 @@ This project was carried out as a part of the curriculum at the National Enginee
 
 - **Graphical User Interface (GUI):** User-friendly interface for configuring STM32G0-Discovery board peripherals.
 - **Assembly Code Generation:** Automatic generation of assembly code based on the user's peripheral configuration.
-- **Peripheral Support:** Provides support for configuring various peripherals (GPIO, UART, SPI, etc.) of the STM32G0 board.
+- **Peripheral Support:** Provides support for configuring various peripherals (GPIO, UART, etc.) of the STM32G0 board.
 - **Microcontroller:** Designed specifically for the STM32G0 family.
 
 ## Installation
