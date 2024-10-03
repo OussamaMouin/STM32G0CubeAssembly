@@ -25,14 +25,12 @@ This project was carried out as a part of the curriculum at the National Enginee
 - **Microcontroller:** Designed specifically for the STM32G0 family.
 
 ## Installation
+   Use the Installer provided in the main directory
 
 ### Prerequisite
 - Keil µVision (or any other STM32 development environment)
 - STM32G0-Discovery board
 
 ### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/stm32g0-assembly-code-generator.git
 
 
