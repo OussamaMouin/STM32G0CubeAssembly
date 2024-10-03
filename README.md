@@ -7,8 +7,8 @@ This project, developed during the 2022/2023 academic year at the **National Eng
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
+- [Examples: Basic applications configured using the interface's generated code ](#Examples)
+- [SourceCode: Interface's source code written in c++ implemented with QT](#Source-Code)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -31,6 +31,19 @@ This project was carried out as a part of the curriculum at the National Enginee
 - Keil µVision (or any other STM32 development environment)
 - STM32G0-Discovery board
 
-### Steps
-
+### Usage
+<p align="center">
+  <img src="![image](https://github.com/user-attachments/assets/d9cf50f8-9303-4ae7-a16c-25a597cb60c6)" width="300"/>
+  
+</p>
+### Examples
+**Look into the "Examples directory**
+In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the following:
+<ul>
+  <li>GPIO</li>
+  <li>ADC</li>
+  <li>TIMER</li>
+  <li>USART</li>
+</ul>
+In this part we put a template for keil µVision and the some examples with the source code.
 
