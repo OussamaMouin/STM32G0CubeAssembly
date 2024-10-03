@@ -3,15 +3,17 @@
 ![USART TX Example](../../../Images/TX1.jpg) <!-- Replace with the correct image path if necessary -->
 
 ## Description
-This application controls the state of an LED (on/off) by sending a message via UART:
-- Sending `'Y'` turns the LED on.
-- Sending any other character turns the LED off.
+This application sends two characters, `'Y'` and `'N'`, over the USART2 interface at regular intervals:
+- **'Y'** is sent first, followed by a delay.
+- **'N'** is sent next, followed by another delay.
+
+This cycle repeats indefinitely, and the characters are transmitted to the connected Bluetooth/USART module.
 
 ### Wiring:
 - **Pin 1 (PB7 : USART1_RX)**: Connected to the TX pin of the Bluetooth/USART module.
 - **Power**: The Bluetooth module is powered by a 5V supply (from another board, as the STM32G0 only provides 3.3V output).
-  - In this case, the ground of both boards should be connected.
-- **Pin 6 (PA15)**: Connected to the LED (optional).
+  - The grounds of both boards must be connected together.
+- **Pin 6 (PA15)**: Connected to an optional external LED.
 
 ---
 
@@ -22,4 +24,3 @@ This application controls the state of an LED (on/off) by sending a message via 
 </a>
 
 Click the image above to watch the video demonstration of this example.
-
