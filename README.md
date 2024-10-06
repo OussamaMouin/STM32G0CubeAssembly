@@ -32,6 +32,14 @@ This project was carried out as a part of the curriculum at the National Enginee
 - STM32G0-Discovery board
 
 ### Usage
+
+This graphical interface summarizes the pin assignments and their descriptions. By clicking
+on any of the pins , a menu appears, showing pin multi- plexing options, as shown in.
+For each pin, we have different functions illustrated in another menu . Each function opens
+a new window to fix the parameters of the peripheral we choose. We shall see these windows in
+more detail in the next subsection. Add to that, the main window has 2 buttons, one to chose
+the path where we want to save our assembly generated code, the other is to confirm that we
+finished our configuration and to execute the file generation.
 <p align="center">
     <img src="Images/Main_Menu.png" alt = "Pin Menu" width="400"/>
    
