@@ -1,7 +1,7 @@
-# STM32G0 Assembly Code Generator
+# STM32G0 CubeAssembly : An Assembly Code Generator
 
 This project, developed during the 2022/2023 academic year at the **National Engineering School of Tunis**, in collaboration with **ST Microelectronics Tunis**, aims at generating assembly language micro-code for the STM32G0-Discovery board. The goal is to facilitate peripheral configuration by providing a graphical interface that automatically generates the necessary assembly code.
-
+<img src="Images/ASM.png" alt = "STM32G0 CubeAssembly icon" />
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
