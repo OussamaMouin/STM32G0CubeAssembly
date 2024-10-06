@@ -59,4 +59,7 @@ In this project we tested our developed interface's generated configuration code
   <li>USART</li>
 </ul>
 
+### Source code
+
+In this project we developed the code genration tool using c++ in the QT enviroment. The file **SourceCode** contains the C++ files , the header files and finally the inteface design files.
 
