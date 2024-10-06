@@ -13,7 +13,7 @@ This application controls the state of an LED (on/off) depending on the message 
 For configuring the USART RX example, the following interface from the **STM32G0 CubeAssembly** tool was used. This tool simplifies the configuration of the STM32G0-discovery board and automatically generates the assembly code needed for the selected peripherals.
 
 <div align="center">
-  <img src="../../../Images/USART_RX_Config_Interface.png" alt="STM32G0 CubeAssembly Interface for USART RX" width="400">
+  <img src="../../../Images/USART_RX_Config_Interface.png" alt="STM32G0 CubeAssembly Interface for USART RX" width="600">
 </div>
 
 - **Pinout View**: Shows the selected pin configuration for the STM32G031J6Mx chip, highlighting the pins used for the example.
