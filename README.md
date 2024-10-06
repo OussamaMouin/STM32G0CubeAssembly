@@ -33,11 +33,16 @@ This project was carried out as a part of the curriculum at the National Enginee
 
 ### Usage
 <p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/d9cf50f8-9303-4ae7-a16c-25a597cb60c6)" width="300"/>
-  
+    <img src="Images/Main_Menu.png" alt = "Pin Menu" width="300"/>
+     <img src="Images/arrow.png" alt = "Pin Menu" width="300"/>
+      <img src="Images/PinMenu1.png" alt = "Pin Menu" width="300"/>
+     <img src="Images/arrow.png" alt = "Pin Menu" width="300"/>
+     <img src="Images/PinMenu2.png" alt = "Pin Menu" width="300"/>
+ 
 </p>
+
 ### Examples
-**Look into the "Examples directory**
+**Look into the "Examples directory**:
 In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the following:
 <ul>
   <li>GPIO</li>
@@ -45,5 +50,5 @@ In this project we tested our developed interface generated configuration code t
   <li>TIMER</li>
   <li>USART</li>
 </ul>
-In this part we put a template for keil µVision and the some examples with the source code.
+
 
