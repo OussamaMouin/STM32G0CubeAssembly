@@ -26,7 +26,7 @@ This project was carried out as a part of the curriculum at the National Enginee
 
 ## Installation
    Go to the [Installer](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Installer) directory and install the software.
-   And download the [template](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Template) file which needs to be included in the project so the configuration code may function.
+   And download the [template](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Template) file, into which the generated main file must be included, to ensure the proper functioning of the configuration code.
 
 ### Prerequisite
 
