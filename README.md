@@ -25,7 +25,8 @@ This project was carried out as a part of the curriculum at the National Enginee
 - **Microcontroller:** Designed specifically for the STM32G0 family.
 
 ## Installation
-   Go to the [Installer](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Installer) directory and install the software
+   Go to the [Installer](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Installer) directory and install the software.
+   And download the [template](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Template) file which needs to be included in the project so the configuration code may function.
 
 ### Prerequisite
 
