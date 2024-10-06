@@ -13,12 +13,12 @@ Desired Frequency = Timer's Clock Frequency / (Prescaler + 1)
   
   - With **Timer's Clock Frequency = 16 MHz**
 
-## Configuration Interface: STM32G0 AssemblyCube
+## Configuration Interface: STM32G0 CubeAssembly
 
-For configuring the Timer example, the following interface from the **STM32G0 AssemblyCube** tool was used. This tool simplifies the configuration of the STM32G0-discovery board and automatically generates the assembly code needed for the selected peripherals.
+For configuring the Timer example, the following interface from the **STM32G0 CubeAssembly** tool was used. This tool simplifies the configuration of the STM32G0-discovery board and automatically generates the assembly code needed for the selected peripherals.
 
 <div align="center">
-  <img src="../../Images/Timer_Config_Interface.png" alt="STM32G0 AssemblyCube Interface" width="600">
+  <img src="../../Images/Timer_Config_Interface.png" alt="STM32G0 CubeAssembly Interface" width="600">
 </div>
 
 - **Pinout View**: Shows the selected pin configuration for the STM32G031J6Mx chip, highlighting the pins used for the example.
