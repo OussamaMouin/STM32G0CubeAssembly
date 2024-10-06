@@ -63,3 +63,9 @@ In this project we tested our developed interface's generated configuration code
 
 In this project we developed the code genration tool using c++ in the QT enviroment. The file **SourceCode** contains the C++ files , the header files and finally the inteface design files.
 
+### Acknowledgments
+
+We are pleased to take this opportunity to express our sincere gratitude and appreciation to all those who have played a role, whether near or far, in the successful completion of this project. First and foremost, we extend our heartfelt thanks to our supervisor at the company, Mr. Younes Lahbib, an Engineer at STMicroelectronics. His unwavering support and guidance were pivotal in ensuring the successful execution of this project.
+
+Additionally, we acknowledge that while we have put significant effort into developing the code, it is not without its flaws. There are areas where the code can be improved, and it still contains some bugs. We remain open to constructive feedback and further refinements to enhance its performance and functionality.
+
