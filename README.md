@@ -46,9 +46,9 @@ finished our configuration and to execute the file generation.
 <p align="center">
     <img src="Images/Main_Menu.png" alt = "Pin Menu" width="900"/>
    
-   <img src="Images/PinMenu1.png" alt = "Pin Menu" width="300"/>
+   <img src="Images/PinMenu1.png" alt = "Pin Menu" width="450"/>
     
-   <img src="Images/PinMenu2.png" alt = "Pin Menu" width="300"/>
+   <img src="Images/PinMenu2.png" alt = "Pin Menu" width="450"/>
  
 </p>
 
