@@ -44,7 +44,7 @@ more detail in the next subsection. Add to that, the main window has 2 buttons, 
 the path where we want to save our assembly generated code, the other is to confirm that we
 finished our configuration and to execute the file generation.
 <p align="center">
-    <img src="Images/Main_Menu.png" alt = "Pin Menu" width="600"/>
+    <img src="Images/Main_Menu.png" alt = "Pin Menu" width="900"/>
    
    <img src="Images/PinMenu1.png" alt = "Pin Menu" width="300"/>
     
