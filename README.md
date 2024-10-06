@@ -51,7 +51,7 @@ finished our configuration and to execute the file generation.
 
 ### Examples
 **Look into the "Examples directory**:
-In this project we tested our developed interface generated configuration code to assure its functionality. The configured peripherals are the following:
+In this project we tested our developed interface's generated configuration code to assure its functionality. The application can configure the following periherials :
 <ul>
   <li>GPIO</li>
   <li>ADC</li>
