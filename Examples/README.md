@@ -6,7 +6,6 @@ This repository contains various assembly examples for the **STM32G0** microcont
 
 ### Covered Examples
 - **ADC**: Demonstrates how to read from an analog pin using the ADC peripheral and control an LED based on the input.
-- **GPIO (OUTPUT)**: Shows how to toggle GPIO pins to control LEDs or other output devices.
 - **PWM (ADC + TIMER)**: Combines ADC and TIMER peripherals to create a PWM signal, with the duty cycle controlled by an ADC input (e.g., a potentiometer).
 - **TIMER**: Demonstrates the use of the TIMER peripheral to create time delays and control the blinking of an LED.
 - **USART**: Includes several examples showcasing USART communication, such as transmitting and receiving data and controlling peripherals.
