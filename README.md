@@ -25,7 +25,7 @@ This project was carried out as a part of the curriculum at the National Enginee
 - **Microcontroller:** Designed specifically for the STM32G0 family.
 
 ## Installation
-   Use the [Installer](/main/Installer.exe) provided in the main directory 
+   Use the [Installer](https://github.com/OussamaMouin/STM32G0CubeAssembly/blob/main/Installer.exe) provided in the main directory 
 
 ### Prerequisite
 - Keil µVision (or any other STM32 development environment)
