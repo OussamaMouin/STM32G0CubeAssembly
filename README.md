@@ -33,7 +33,7 @@ This project was carried out as a part of the curriculum at the National Enginee
 
 ### Usage
 <p align="center">
-    <img src="Images/Main_Menu.png" alt = "Pin Menu" width="300"/>
+    <img src="Images/Main_Menu.png" alt = "Pin Menu" width="400"/>
    
    <img src="Images/PinMenu1.png" alt = "Pin Menu" width="300"/>
     
