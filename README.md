@@ -4,6 +4,7 @@ This project, developed during the 2022/2023 academic year at the **National Eng
 <p align="center">
    <img src="Images/ASM.png" alt = "STM32G0 CubeAssembly icon" />
 </p>
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
